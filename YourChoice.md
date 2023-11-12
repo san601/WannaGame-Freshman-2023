@@ -9,22 +9,21 @@ Author: Okoonzz
 
 [chall](https://cnsc.uit.edu.vn/ctf/files/eaa4690e4341165c8bd8864b6097ea32/rev01?token=eyJ1c2VyX2lkIjo4NTksInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjE3Mn0.ZVBVgA.s1uKlf_9v0L_8BV6NLwj6Ofkuj4)
 
-
-Đây là một bài khá hay và khó đối với newbie như mình. Mình cũng không kịp làm trong thời gian của giải mặc dù được mấy anh cho hint khá nhiều. Anyway đây là write up chi tiết cho bài này và khuyến khích các bạn tự thử làm trước.
+This challenge is actually quite hard and fun for me. I wasn't have enough time to solve this in the contest eventhough there was a ton of hint for me. Anyway, this is my attempt to make a write up for this challenge, hope you guys enjoy it.
 
 ### Solution
 
-Sau khi chạy thử chương trình, mình thấy rằng chương trình sẽ cho nhập vào 5 giá trị theo format (00-47). Tức là với số hàng chục thì từ 0-4, hàng đơn vị từ 0-7.
+After running the file, we know that the program allows 5 input in the format of (00-47), which means the first digit cannot exceed 4 and the second digit cannot exceed 7. This can be the first hint for us.
 
 ![image](https://hackmd.io/_uploads/HybjqCam6.png)
 
-Dùng IDA mở lên xem thử thì thấy được đây là đoạn code nhập và kiểm tra input.
+Using IDA, the part where it get and check input is shown:
 
 ![image](https://hackmd.io/_uploads/ByUP0ATQa.png)
 
-Dòng code được đánh dấu được dùng để set cái gì đó về 1.
+The highlighted row might set something to 1. This is our second hint.
 
-Kiểm tra tiếp tục đoạn code tiếp theo, có vẻ như đây là đoạn code check 5 số input thỏa điều kiện và in ra flag. 
+Continue checking, this might be the part of code where the program checks 5 input with some constraints and print the flag if correct.
 
 ![image](https://hackmd.io/_uploads/Hy_a0C6m6.png)
 
