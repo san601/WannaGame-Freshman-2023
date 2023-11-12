@@ -13,7 +13,7 @@ This challenge is actually quite hard and fun for me. I wasn't have enough time 
 
 ### Solution
 
-After running the file, we know that the program allows 5 input in the format of (00-47), which means the first digit cannot exceed 4 and the second digit cannot exceed 7. This can be the first hint for us.
+After running the file, we know that the program allows 5 inputs in the format of (00-47), which means the first digit cannot exceed 4 and the second digit cannot exceed 7. This can be the first hint for us.
 
 ![image](https://hackmd.io/_uploads/HybjqCam6.png)
 
