@@ -70,13 +70,12 @@ fn get_result() -> [[u32; MATRIX_SIZE]; MATRIX_SIZE] {
 Our task is to find a matrix so that when it multiply with the predefined matrix, the result is the other matrix. 
 
 We know that:
-$$
-\ A \cdot B = X \iff A = X \cdot B^{-1} \
-$$
 
-So our task is to calculate $$ X \cdot B^{-1} \ $$ with A is the predefined matrix and X is the result matrix.
+A * B = X <=> A = X * B^-1
 
-So to summary, our task is to find matrix A and convert it to ascii characters.
+So our task is to calculate X * B^-1 with B is the predefined matrix and X is the result matrix.
+
+Last step, our task is to find matrix A and convert it to ascii characters.
 
 ### Code
 
