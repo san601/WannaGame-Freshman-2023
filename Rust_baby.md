@@ -32,7 +32,7 @@ fn main() {
 }
 ```
 
-It can be seen that our input will be convert to a matrix of number and mulptiply with a predefined matrix.
+It can be seen that our input will be converted to a matrix of number and mulptiply with a predefined matrix.
 
 The predefined matrix:
 
