@@ -132,5 +132,5 @@ And we got our flag:
 
 ![image](https://hackmd.io/_uploads/BJ9enRaQp.png)
 
-Mặc dù giải lần này đề khá khó so với freshman nhưng mình cũng đã học được khá nhiều thứ. Hi vọng các bạn cũng sẽ học được gì đó từ challenge này. Thanks for reading.
-Eventhough this challenge is quite hard for freshers but I have learnt a lot. Hope you guys like this writeup.
+Eventhough this challenge is quite hard for freshers but I have learnt a lot. Hope you guys like this writeup. Thanks for reading.
+
