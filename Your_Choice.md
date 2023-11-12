@@ -42,7 +42,6 @@ Back to the code, we can see that sub_21A8 and sub_21D5 use a1 as input to check
 
 ![image](https://hackmd.io/_uploads/r1DbNJRm6.png)
 
-Như vậy có thể xác định được vị trí của bàn cờ vua trong stack dựa vào a1. Mình quay lại hàm main để xem và xác định được v37 là nơi cần tìm trong stack.
 It is clear that we can use a1 to find the initial board with 3 queens on the stack. Let's get back to main function and there we go, v37 is what we need.
 
 ![image](https://hackmd.io/_uploads/HkHRVkA7p.png)
