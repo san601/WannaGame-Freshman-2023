@@ -98,23 +98,24 @@ Paying attention to these lines of code where it calculates and compares stuffs.
 
 ```c=
 for ( k = 0LL; k < v12; ++k )
+{
+  v7 = s[k];
+  v8 = s[k + 1];
+  *(_DWORD *)&v14[4 * k] = v8 ^ v7;
+}
+for ( m = 0LL; m < v12; ++m )
+{
+  if ( *(_DWORD *)&v14[4 * m] != dword_55AC0CFA92E0[m] )
   {
-    v7 = s[k];
-    v8 = s[k + 1];
-    *(_DWORD *)&v14[4 * k] = v8 ^ v7;
+    // Not satisfy, printing "Wrong"
+    for ( n = 0; n <= 4; ++n )
+      putchar(dword_55AC0CFA9290[n]);
+    exit(0);
   }
-  for ( m = 0LL; m < v12; ++m )
-  {
-    if ( *(_DWORD *)&v14[4 * m] != dword_55AC0CFA92E0[m] )
-    {
-      for ( n = 0; n <= 4; ++n )
-        putchar(dword_55AC0CFA9290[n]);
-      exit(0);
-    }
-  }
+}
 ```
 
-So basically, this 
+So basically, this piece of code use 
 
 This is the value of dword_55AC0CFA92E0, where it compares our decrypted input with:
 
