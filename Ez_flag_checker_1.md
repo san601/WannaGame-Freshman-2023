@@ -58,7 +58,7 @@ else:
     print("\t\t\t\t\t\t\t\tWRONG!")
 ```
 
-Oops ![image](https://hackmd.io/_uploads/SklhzgyN6.png)
+Oops ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/ac23428b-9183-4cfa-a866-3e57888c3d0a)
 
 We need to know how data is being manipulated so that we can reverse the proccess.
 
