@@ -1,6 +1,8 @@
 # WannaGame Freshman 2023
 ## EZ FLAG CHECKER 2
 
+Haven't solved yet
+
 Level: hard
 
 Description: A simple flagchecker 2
