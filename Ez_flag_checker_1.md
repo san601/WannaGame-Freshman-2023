@@ -104,7 +104,7 @@ def func5(param):
 print(func5(func3_rev(c)))
 ```
  
-This result in the shuffled string 
+This returns the shuffled string 
 ```y{ktrcVnldc_1soEui}I_1Ihti___i_leds_WH4?tmsD0mi_tP3'Sfu_ff1ToRe_```
 
 Our last step is to reverse it back to the flag using the index string above.
