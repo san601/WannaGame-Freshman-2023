@@ -139,5 +139,23 @@ Using GDB, we know that the program perform a xor operation at these line:
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/a3ab9119-5725-4564-b454-2dd0847e4c4d)
 
-One way to know more is to try to input something. In the previous code, we know that the input's length cannot lower than 7 and is divisible by 4 so I type abcdeeeeee... [length = 36].
+One way to know more is to try to input something. In the previous code, we know that the input's length cannot lower than 7 and is divisible by 4 so I type "abcdeeeeee..." (length = 36). Examining RAX and [rbp-0x164]:
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/526a2856-b1a3-4e04-bc59-9c37032b726e)
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/e711d49e-e94e-4ef8-af79-7ec3ed09b210)
+
+So we know that it uses 4 byte and 4 byte to perform a xor, it's easy to get the flag. One problem is that we only know the first 3 letters since the flag starts with "W1{". We need to try every character in that 4th position so that after reversing the flag, the last character is a "}".
+
+### Code
+```python=
+check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08,
+         0x0E, 0x47, 0x02, 0x00, 0x3D, 0x01,
+         0x11, 0x31, 0x24, 0x06, 0x3B, 0x29,
+         0x53, 0x43, 0x00, 0x13, 0x41, 0x40,
+         0x2F, 0x04, 0x41, 0x50, 0x2F, 0x61,
+         0x5D, 0x3B, 0x05, 0x02, 0x4F, 0x22]
+
+s = "W1{"
+```
 
