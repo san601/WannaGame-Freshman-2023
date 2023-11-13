@@ -3,5 +3,4 @@
 
 pain
 
-![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/1f7d15cf-2681-4a99-b53a-8749292856d0)
-
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/6dfaf625-86b7-4fa7-b360-1766174ea462)
