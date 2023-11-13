@@ -64,6 +64,58 @@ Oops ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803
 
 We need to know how data is being manipulated so that we can reverse the proccess.
 
+
+So basically, func4 and func5, which are applied to string b, will return a list of 2-digit numbers that will be used to shuffle our input. We need to get that string first.
+
+```python=
+index = func5(func4(b))
+print(index)
+```
+This return
+```51023114061911262237423644094857534163035001382045343318591054231255171300152162280458255230164661053227084043243947603556490729```
+
+One more thing to be consider is func5 and func2 are actually doing opposite things. On one side, func2 converts string of character to string of binary. On the other si binary string back to string of character. We can use this insight to reverse back to the original state of a string.
+
+```python=
+'''
+def func3(param):
+    return param.replace("0", "O").replace("1", "0")
+'''
+def func3_rev(param):
+    return param.replace("0", "1").replace("O", "0")
+
+def func5(param):
+    result = ""
+    for i in range(0, len(param), 8):
+        bin_str = param[i:i+8]
+        num = int(bin_str, 2)
+        char = chr(num)
+        result += char
+    return result
+
+print(func5(func3_rev(c)))
+```
+ 
+This result in the shuffled string 
+```y{ktrcVnldc_1soEui}I_1Ihti___i_leds_WH4?tmsD0mi_tP3'Sfu_ff1ToRe_```
+
+Our last step is to reverse it back to the flag using the index string above.
+
+```python=
+flag = list("a" * len(res))
+# Same algo as func1
+list_num = [int(index[i:i+2],10) for i in range(0,len(index),2)]
+for i in range(len(list_num)):
+    # A bit tricky but not hard
+    flag[list_num[i]] = res[i]
+print(''.join(flag))
+```
+
+And this prints out 
+```
+W1{ImPreSsiVe_tHis_ch4ll_Dn't_mk3_iT_dIfficu1t_foR_y0u_doEs_1t?}
+```
+
 ```python=
 if (func3(func2(func1(a,func5(func4(b)))))) == c:
     print("\t\t\t\t\t\t\t\tCORRECT!")
