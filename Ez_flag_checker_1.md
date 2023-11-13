@@ -62,7 +62,7 @@ else:
 
 Oops ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/ac23428b-9183-4cfa-a866-3e57888c3d0a)
 
-We need to know how data is being manipulated so that we can reverse the proccess.
+We need to know how data is being manipulated so that we can reverse the process.
 
 ```python=
 if (func3(func2(func1(a,func5(func4(b)))))) == c:
