@@ -133,5 +133,7 @@ check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08,
 
 ```
 
+I'm stuck at this point so maybe this writeups will be updated later.
+
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/f87d9ead-1942-433f-903c-7de0c5a62124)
 
