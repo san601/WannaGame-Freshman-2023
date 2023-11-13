@@ -21,9 +21,76 @@ I noticed that if I use that flag on a debugger, it turned out to be the correct
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/99313b1b-e941-4f3b-b095-8c80638c894d)
 
-Continue examining using IDA, a bunch of ptrace function appeared so I knew that this was the anti-debugging mechanism. 
+Continue examining using IDA, a bunch of ptrace functions appeared so I knew that this was the ptrace anti-debugging mechanism. 
 
 It's very easy to bypass this, just set a breakpoint at ptrace function, finish the function and then set RAX register to 0x0. [For more information](https://jaybailey216.com/debugging-stripped-binaries/)
 
-I'll use IDA to demonstrate the proce
+And this is the actual function to check our input.
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/f7b7a008-e34c-4b3a-a783-b444e002a40c)
+
+Let's see its code.
+
+```c=
+void __noreturn sub_55AC0CFA696C()
+{
+  unsigned __int64 v0; // rax
+  void *v1; // rsp
+  _BYTE v2[8]; // [rsp+8h] [rbp-180h] BYREF
+  int i; // [rsp+10h] [rbp-178h]
+  int j; // [rsp+14h] [rbp-174h]
+  int n; // [rsp+18h] [rbp-170h]
+  int ii; // [rsp+1Ch] [rbp-16Ch]
+  int v7; // [rsp+20h] [rbp-168h]
+  int v8; // [rsp+24h] [rbp-164h]
+  unsigned __int64 k; // [rsp+28h] [rbp-160h]
+  unsigned __int64 m; // [rsp+30h] [rbp-158h]
+  size_t v11; // [rsp+38h] [rbp-150h]
+  unsigned __int64 v12; // [rsp+40h] [rbp-148h]
+  unsigned __int64 v13; // [rsp+48h] [rbp-140h]
+  _BYTE *v14; // [rsp+50h] [rbp-138h]
+  _DWORD s[66]; // [rsp+58h] [rbp-130h] BYREF
+  unsigned __int64 v16; // [rsp+160h] [rbp-28h]
+
+  v16 = __readfsqword(0x28u);
+  for ( i = 0; i <= 17; ++i )
+    putchar(dword_55AC0CFA9240[i]);
+  __isoc99_scanf("%255s", s);
+  v11 = strlen((const char *)s);
+  if ( v11 <= 7 || (v11 & 3) != 0 )
+  {
+    for ( j = 0; j <= 5; ++j )
+      putchar(dword_55AC0CFA9290[j]);
+    exit(0);
+  }
+  v12 = (v11 >> 2) - 1;
+  v13 = (v11 >> 2) - 2;
+  v0 = 16 * ((4 * v12 + 15) / 0x10);
+  while ( v2 != &v2[-(v0 & 0xFFFFFFFFFFFFF000LL)] )
+    ;
+  v1 = alloca(v0 & 0xFFF);
+  if ( (v0 & 0xFFF) != 0 )
+    *(_QWORD *)&v2[(v0 & 0xFFF) - 8] = *(_QWORD *)&v2[(v0 & 0xFFF) - 8];
+  v14 = v2;
+  for ( k = 0LL; k < v12; ++k )
+  {
+    v7 = s[k];
+    v8 = s[k + 1];
+    *(_DWORD *)&v14[4 * k] = v8 ^ v7;
+  }
+  for ( m = 0LL; m < v12; ++m )
+  {
+    if ( *(_DWORD *)&v14[4 * m] != dword_55AC0CFA92E0[m] )
+    {
+      for ( n = 0; n <= 4; ++n )
+        putchar(dword_55AC0CFA9290[n]);
+      exit(0);
+    }
+  }
+  for ( ii = 0; ii <= 7; ++ii )
+    putchar(dword_55AC0CFA92C0[ii]);
+  exit(0);
+}
+```
+
 
