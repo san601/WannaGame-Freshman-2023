@@ -23,7 +23,7 @@ def func1(our_input, param2):
     param2 = ''.join(param2)
     return param2
 
-# This function takes a string of character and takes each character, turns it into a 8 bit binary string and 
+# This function takes a string of character and takes each character, turns it into a 8 bit binary string and combine them into one string
 def func2(param):
     result = []
     for i in param:
@@ -31,14 +31,16 @@ def func2(param):
         result.append(list_bin)
     return ''.join(result)
 
-# Swap 0 with O, then 1 with 0
+# Swaps 0 with O, then 1 with 0
 def func3(param):
     return param.replace("0", "O").replace("1", "0")
 
-# Swap 0 with 1, then O with 0
+# Swaps 0 with 1, then O with 0
 def func4(param):
     return param.replace("0", "1").replace("O", "0")
 
+# Each iteration, this function takes a string of 8 bit and turn it into ascii character
+# It returns the combination of those ascii character
 def func5(param):
     result = ""
     for i in range(0, len(param), 8):
