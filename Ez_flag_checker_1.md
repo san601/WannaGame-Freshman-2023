@@ -64,6 +64,12 @@ Oops ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803
 
 We need to know how data is being manipulated so that we can reverse the proccess.
 
+```python=
+if (func3(func2(func1(a,func5(func4(b)))))) == c:
+    print("\t\t\t\t\t\t\t\tCORRECT!")
+else:
+    print("\t\t\t\t\t\t\t\tWRONG!")
+```
 
 So basically, func4 and func5, which are applied to string b, will return a list of 2-digit numbers that will be used to shuffle our input. We need to get that string first.
 
@@ -115,11 +121,3 @@ And this prints out
 ```
 W1{ImPreSsiVe_tHis_ch4ll_Dn't_mk3_iT_dIfficu1t_foR_y0u_doEs_1t?}
 ```
-
-```python=
-if (func3(func2(func1(a,func5(func4(b)))))) == c:
-    print("\t\t\t\t\t\t\t\tCORRECT!")
-else:
-    print("\t\t\t\t\t\t\t\tWRONG!")
-```
-
