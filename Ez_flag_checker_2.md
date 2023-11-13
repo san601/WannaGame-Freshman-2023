@@ -135,7 +135,9 @@ check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08,
 
 ```
 
-I'm stuck at this point so maybe this writeup will be updated later.
+Using GDB, we know that the program perform a xor operation at these line:
 
-![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/f87d9ead-1942-433f-903c-7de0c5a62124)
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/a3ab9119-5725-4564-b454-2dd0847e4c4d)
+
+One way to know more is to try to input something. In the previous code, we know that the input's length cannot lower than 7 and is divisible by 4 so I type abcdeeeeee... [length = 36].
 
