@@ -25,7 +25,8 @@ Continue examining using IDA, a bunch of ptrace functions appeared so I knew tha
 
 It's very easy to bypass this, just set a breakpoint at ptrace function, finish the function and then set RAX register to 0x0. [For more information](https://jaybailey216.com/debugging-stripped-binaries/)
 
-And this is the actual function to check our input.
+From now on, this is my attempt to solve this challenge at home because I couldn't finish it on time at the contest.
+This is the actual function to check our input.
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/f7b7a008-e34c-4b3a-a783-b444e002a40c)
 
@@ -93,4 +94,40 @@ void __noreturn sub_55AC0CFA696C()
 }
 ```
 
+Paying attention to these lines of code where it calculates and compares stuffs. v12 is our input's length divided by 4 and then minus 1.
 
+```c=
+for ( k = 0LL; k < v12; ++k )
+  {
+    v7 = s[k];
+    v8 = s[k + 1];
+    *(_DWORD *)&v14[4 * k] = v8 ^ v7;
+  }
+  for ( m = 0LL; m < v12; ++m )
+  {
+    if ( *(_DWORD *)&v14[4 * m] != dword_55AC0CFA92E0[m] )
+    {
+      for ( n = 0; n <= 4; ++n )
+        putchar(dword_55AC0CFA9290[n]);
+      exit(0);
+    }
+  }
+```
+
+So basically, this 
+
+This is the value of dword_55AC0CFA92E0, where it compares our decrypted input with:
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/4e0c4831-473c-43d4-9056-a094f49c7c12)
+
+Let's put those value into python for future use.
+
+```python=
+check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08, 
+         0x0E, 0x47, 0x02, 0x00, 0x3D, 0x01, 
+         0x11, 0x31, 0x24, 0x06, 0x3B, 0x29, 
+         0x53, 0x43, 0x00, 0x13, 0x41, 0x40, 
+         0x2F, 0x04, 0x41, 0x50, 0x2F, 0x61, 
+         0x5D, 0x3B, 0x05, 0x02, 0x4F, 0x22]
+
+```
