@@ -171,5 +171,5 @@ And the result is
 W1{w0Wwww_y0u_D1dn`7_G3t_Tr4pP3d_1n_Z3!}
 ```
 
-Very painful to solve indeed 🛐🛐🛐
+Very painful to solve indeed 🛐🛐🛐 at least for me.
 
