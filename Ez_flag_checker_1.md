@@ -80,7 +80,7 @@ print(index)
 This return
 ```51023114061911262237423644094857534163035001382045343318591054231255171300152162280458255230164661053227084043243947603556490729```
 
-One more thing to be consider is func5 and func2 are actually doing opposite things. On one side, func2 converts string of character to string of binary. On the other si binary string back to string of character. We can use this insight to reverse back to the original state of a string.
+One more thing to be consider is func5 and func2 are actually doing opposite things. On one side, func2 converts string of character to string of binary. On the other side, func5 converts binary string back to string of character. We can use this insight to reverse back to the original state of a string.
 
 ```python=
 '''
