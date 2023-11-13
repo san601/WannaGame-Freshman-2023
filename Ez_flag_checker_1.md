@@ -11,7 +11,7 @@ Author: dream
 
 ### Solution
 
-I really don't wanna write this because this chall is freaking annoying and time consuming. But anyway, here is the solution for you guys.
+I really don't wanna write this because this chall is so annoying and time consuming. But anyway, here is the solution for you guys.
 
 Opening the python script, we see a lot of obfuscated stuffs. The first thing I'm gonna do is to rename all of this using "Find and Replace" feature on your favorite text editor.
 
