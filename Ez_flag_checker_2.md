@@ -121,7 +121,7 @@ This is the value of dword_55AC0CFA92E0, where it compares our decrypted input w
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/4e0c4831-473c-43d4-9056-a094f49c7c12)
 
-Let's put those value into python for future use.
+Let's put those numbers into python for future use.
 
 ```python=
 check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08, 
