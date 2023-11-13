@@ -9,19 +9,21 @@ Author: dream
 
 ### Solution
 
-I really don't wanna write this because this chall is so annoying and time consuming. But anyway, here is the solution.
+I really don't wanna write this because this chall is freaking annoying and time consuming. But anyway, here is the solution for you guys.
 
 Opening the python script, we see a lot of obfuscated stuffs. The first thing I'm gonna do is to rename all of this using "Find and Replace" feature on your favorite text editor.
 
 After deobfuscating and adding some comments, our code look somewhat like this:
 ```python=
-# Take 
+# Param2 might be a string of 2-digit numbers
+# This function uses numbers from that string to shuffle our input
 def func1(our_input, param2):
     list_num = [int(param2[i:i+2],10) for i in range(0,len(param2),2)]
     param2 = [our_input[i] for i in list_num]
     param2 = ''.join(param2)
     return param2
 
+# This function takes a string of character and takes each character, turns it into a 8 bit binary string and 
 def func2(param):
     result = []
     for i in param:
@@ -29,9 +31,11 @@ def func2(param):
         result.append(list_bin)
     return ''.join(result)
 
+# Swap 0 with O, then 1 with 0
 def func3(param):
     return param.replace("0", "O").replace("1", "0")
 
+# Swap 0 with 1, then O with 0
 def func4(param):
     return param.replace("0", "1").replace("O", "0")
 
@@ -53,3 +57,15 @@ if (func3(func2(func1(a,func5(func4(b)))))) == c:
 else:
     print("\t\t\t\t\t\t\t\tWRONG!")
 ```
+
+Oops ![image](https://hackmd.io/_uploads/SklhzgyN6.png)
+
+We need to know how data is being manipulated so that we can reverse the proccess.
+
+```python=
+if (func3(func2(func1(a,func5(func4(b)))))) == c:
+    print("\t\t\t\t\t\t\t\tCORRECT!")
+else:
+    print("\t\t\t\t\t\t\t\tWRONG!")
+```
+
