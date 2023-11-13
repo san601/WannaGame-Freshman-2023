@@ -7,6 +7,8 @@ Description: A simple flagchecker 1
 
 Author: dream
 
+[chall](https://cnsc.uit.edu.vn/ctf/files/12ba5f39682611728d6243bfc65400b6/EzFlagChecker1.py?token=eyJ1c2VyX2lkIjo4NTksInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjE2OX0.ZVIjVA.OBEtxfhltij6fhPsVFRCw4BdVOs)
+
 ### Solution
 
 I really don't wanna write this because this chall is freaking annoying and time consuming. But anyway, here is the solution for you guys.
