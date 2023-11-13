@@ -16,3 +16,5 @@ First, as usual, I used IDA to look at the main function and found out a set of 
 Using z3 to solve it, I got this flag instead of the real flag. This took me a few hours in the contest lol. Very painful.
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/6dfaf625-86b7-4fa7-b360-1766174ea462)
+
+Back to the challenge, 
