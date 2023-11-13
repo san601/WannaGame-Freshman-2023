@@ -117,7 +117,7 @@ for ( m = 0LL; m < v12; ++m )
 }
 ```
 
-So basically, this piece of code use 
+This pseudocode is kinda weird because v12 is much smaller than the length of our input. But I'll check it in GDB with assembly code later.
 
 This is the value of dword_55AC0CFA92E0, where it compares our decrypted input with:
 
@@ -145,7 +145,7 @@ One way to know more is to try to input something. In the previous code, we know
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/e711d49e-e94e-4ef8-af79-7ec3ed09b210)
 
-So we know that it uses 4 byte and 4 byte to perform a xor, it's easy to get the flag. One problem is that we only know the first 3 letters since the flag starts with "W1{". We need to try every character in that 4th position so that after reversing the flag, the last character is a "}".
+So we know that it chooses 2 bytes that are 4 bytes apart to perform a xor, it's easy to get the flag. One problem is that we only know the first 3 letters since the flag starts with "W1{". We need to try every character in that 4th position so that after reversing the flag, the last character is a "}".
 
 ### Code
 ```python=
@@ -157,5 +157,19 @@ check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08,
          0x5D, 0x3B, 0x05, 0x02, 0x4F, 0x22]
 
 s = "W1{"
+
+for i in range(48, 127):
+    flag = s + chr(i)
+    for j in range(len(check)):
+        flag += chr(check[j] ^ ord(flag[j]))
+    if flag[-1] == '}':
+        print(flag)
 ```
+
+And the result is
+```
+W1{w0Wwww_y0u_D1dn`7_G3t_Tr4pP3d_1n_Z3!}
+```
+
+Very painful to solve indeed 🛐🛐🛐
 
