@@ -173,3 +173,4 @@ W1{w0Wwww_y0u_D1dn`7_G3t_Tr4pP3d_1n_Z3!}
 
 Very painful to solve indeed 🛐🛐🛐 at least for me.
 
+*Note: I've just noticed that the last character is a "}", so in order to find the 4th character, I just have to xor reversedly from the end of the the provided check table. No need to brute-forcing.
