@@ -72,13 +72,15 @@ Back to main._mR4, as we know v11 stores the substitution box and v9 (might) sto
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/d184651a-205f-4d48-b640-b75ea1eb1eb3)
 
-First function
+After main_mR4
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/413db0dd-0f3d-4de7-b5b6-168e8f7ad1b6)
 
-Next function
+After main_rt
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/865d97a1-0f9f-43e0-967b-c9a9e643b569)
+
+The difference between those 2 can tell us what does main_rt do. Let's take a closer look.
 
 This might check our input after 2 function with main_dec
 
