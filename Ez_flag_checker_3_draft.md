@@ -170,3 +170,15 @@ This return a weird string, W1{C0n9r is readable. Might be encoded.
 ```
 W1{C0n9rìÿÈ$»÷'Pr$Ì³²iZF\íÒ
 ```
+
+This is where it compares our input with another encoded string.
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/b52e5a6b-00e7-415f-b9e2-dd23494bc85c)
+
+Observing it in GDB, we could find those string
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/3205aeb7-b234-4e4d-8580-0570b6192782)
+
+```
+W1{C0n9r@t5_U_0n_f1Gur1ng_Ou7_th3_CoRrec7_Key_4nd_rot4ting_bit7}
+```
