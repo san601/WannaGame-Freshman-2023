@@ -82,6 +82,12 @@ After main_rt
 
 The difference between those 2 can tell us what does main_rt do. Let's take a closer look.
 
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/02be3d1a-8ed4-485d-8da3-32ccd4dbe63b)
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/b5621ab0-6d24-49cc-a592-e6475ce8be63)
+
 This might check our input after 2 function with main_dec
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/59da8344-0529-4ee2-802b-7da84614a5f3)
+
+
