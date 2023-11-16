@@ -72,3 +72,10 @@ Back to main._mR4, as we know v11 stores the substitution box and v9 (might) sto
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/d184651a-205f-4d48-b640-b75ea1eb1eb3)
 
+First function
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/1d87a04b-090a-45a3-8874-8e34f10eb142)
+
+Next function
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/865d97a1-0f9f-43e0-967b-c9a9e643b569)
