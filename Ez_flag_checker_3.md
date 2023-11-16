@@ -60,7 +60,7 @@ It's likely that v14 is our input's length and v9 is the hidden flag's length. U
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/b91133cd-92f8-4651-a7e4-c0ec0b2f9079)
 
-In main._K, this is the part where it initializes a substitution box, which is also a key indicator of RC4 encryption.
+In main._K, this is the part where it initializes a substitution box, which is also a key indicator of RC4 encryption. [This blog](https://blog.talosintelligence.com/an-introduction-to-recognizing-and/) provides a very detailed explanation on how RC4 work as well as how to detect if a program/malware uses it.
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/6fb2ebc8-62b3-4085-8d82-90c1a8522053)
 
