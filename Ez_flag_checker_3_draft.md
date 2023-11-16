@@ -71,3 +71,4 @@ This is where it scrambles that substitution box.
 Back to main._mR4, as we know v11 stores the substitution box and v9 (might) stores the text that is going to be encrypted.
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/d184651a-205f-4d48-b640-b75ea1eb1eb3)
+
