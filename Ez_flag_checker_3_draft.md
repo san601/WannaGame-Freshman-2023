@@ -74,8 +74,12 @@ Back to main._mR4, as we know v11 stores the substitution box and v9 (might) sto
 
 First function
 
-![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/1d87a04b-090a-45a3-8874-8e34f10eb142)
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/413db0dd-0f3d-4de7-b5b6-168e8f7ad1b6)
 
 Next function
 
 ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/865d97a1-0f9f-43e0-967b-c9a9e643b569)
+
+This might check our input after 2 function with main_dec
+
+![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803/59da8344-0529-4ee2-802b-7da84614a5f3)
