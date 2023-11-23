@@ -7,8 +7,6 @@ Description: A baby rust challenge for you to warmup
 
 Author: dream
 
-[chall](https://cnsc.uit.edu.vn/ctf/files/43b4b85f6a4d1aea6dd0a82268aa6ef7/chall.rs?token=eyJ1c2VyX2lkIjo4NTksInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjE2OH0.ZVDgWg.Wipge7Z5SxImNhPRsghIeKV2o_k)
-
 ### Solution
 
 Let's examine the main function in that Rust file
