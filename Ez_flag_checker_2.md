@@ -7,8 +7,6 @@ Description: A simple flagchecker 2
 
 Author: dream
 
-[chall](https://cnsc.uit.edu.vn/ctf/files/d06670f00e7112ea728d31705d6ca14e/EzFlagChecker2?token=eyJ1c2VyX2lkIjo4NTksInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjE3MH0.ZVIjMg.UbOPAXpLYC9r8ZNFzYUO6j2VWM4)
-
 ### Solution
 
 First, as usual, I used IDA to look at the main function and found out a set of simultaneous equations.
