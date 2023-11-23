@@ -7,8 +7,6 @@ Description: All choices are yours
 
 Author: Okoonzz
 
-[chall](https://cnsc.uit.edu.vn/ctf/files/eaa4690e4341165c8bd8864b6097ea32/rev01?token=eyJ1c2VyX2lkIjo4NTksInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjE3Mn0.ZVBVgA.s1uKlf_9v0L_8BV6NLwj6Ofkuj4)
-
 This challenge is actually quite hard and fun for me. I wasn't have enough time to solve this in the contest eventhough there was a ton of hint for me. Anyway, this is my attempt to make a writeup for this challenge, hope you guys enjoy it.
 
 ### Solution
