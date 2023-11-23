@@ -7,8 +7,6 @@ Description: I just want to welcome you to the WannaGame Freshman 2023!!!
 
 Author: dream
 
-[chall](https://cnsc.uit.edu.vn/ctf/files/d68c3530e27c38b01ab02fd39935b4dd/Welcome?token=eyJ1c2VyX2lkIjo4NTksInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjE2N30.ZVDZtQ.Ln4GZZE5pxQTfkCzurSNLFwU2hs)
-
 ### Solution
 
 Open the file with IDA, we can clearly see something that look like the flag but encrypted.
