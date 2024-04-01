@@ -123,7 +123,7 @@ This is the value of dword_55AC0CFA92E0, where it compares our decrypted input w
 
 Let's put those numbers into python for future use.
 
-```python=
+```python
 check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08, 
          0x0E, 0x47, 0x02, 0x00, 0x3D, 0x01, 
          0x11, 0x31, 0x24, 0x06, 0x3B, 0x29, 
@@ -146,7 +146,7 @@ One way to know more is to try to input something. In the previous code, we know
 So we know that it chooses 2 bytes that are 4 bytes apart to perform a xor, it's easy to get the flag. One problem is that we only know the first 3 letters since the flag starts with "W1{". We need to try every character in that 4th position so that after reversing the flag, the last character is a "}".
 
 ### Code
-```python=
+```python
 check = [0x67, 0x66, 0x0C, 0x00, 0x47, 0x08,
          0x0E, 0x47, 0x02, 0x00, 0x3D, 0x01,
          0x11, 0x31, 0x24, 0x06, 0x3B, 0x29,
