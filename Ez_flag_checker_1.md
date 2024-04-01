@@ -14,7 +14,7 @@ I really don't wanna write this because this chall is so annoying and time consu
 Opening the python script, we see a lot of obfuscated stuffs. The first thing I'm gonna do is to rename all of this using "Find and Replace" feature on your favorite text editor.
 
 After deobfuscating and adding some comments, our code look somewhat like this:
-```python=
+```python
 # Param2 might be a string of 2-digit numbers
 # This function uses numbers from that string to shuffle our input
 def func1(our_input, param2):
