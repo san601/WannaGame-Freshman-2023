@@ -64,7 +64,7 @@ Oops ![image](https://github.com/san601/WannaGame-Freshman-2023/assets/144963803
 
 We need to know how data is being manipulated so that we can reverse the process.
 
-```python=
+```python
 if (func3(func2(func1(a,func5(func4(b)))))) == c:
     print("\t\t\t\t\t\t\t\tCORRECT!")
 else:
@@ -73,7 +73,7 @@ else:
 
 So basically, func4 and func5, which are applied to string b, will return a list of 2-digit numbers that will be used to shuffle our input. We need to get that string first.
 
-```python=
+```python
 index = func5(func4(b))
 print(index)
 ```
@@ -82,7 +82,7 @@ This return
 
 One more thing to be considered is that func5 and func2 are actually doing opposite things. On one side, func2 converts string of character to string of binary. On the other side, func5 converts binary string back to string of character. We can use this insight to reverse back to the original state of a string.
 
-```python=
+```python
 '''
 def func3(param):
     return param.replace("0", "O").replace("1", "0")
@@ -107,7 +107,7 @@ This returns the shuffled string
 
 Our last step is to reverse it back to the flag using the index string above.
 
-```python=
+```python
 flag = list("a" * len(res))
 # Same algo as func1
 list_num = [int(index[i:i+2],10) for i in range(0,len(index),2)]
