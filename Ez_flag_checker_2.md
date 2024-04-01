@@ -32,7 +32,7 @@ This is the actual function to check our input.
 
 Let's see its code.
 
-```c=
+```c
 void __noreturn sub_55AC0CFA696C()
 {
   unsigned __int64 v0; // rax
